@@ -1,0 +1,1 @@
+INSERT INTO "public"."specialities" ("speciality_id", "name", "search_slug") VALUES ('1', 'Dentist', 'dentist'), ('2', 'Cardiologist', 'cardiologist'), ('3', 'Dermatologist', 'dermatologist'), ('4', 'Orthopedic', 'orthopedic'), ('5', 'Pediatrician', 'pediatrician'), ('6', 'General Physician', 'physician');
