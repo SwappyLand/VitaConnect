@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaConnect | Doctor Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #0d6efd; --secondary-color: #198754; --light-bg: #f8f9fa; }
+        body { background-color: var(--light-bg); font-family: 'Segoe UI', sans-serif; }
+        .navbar-brand { font-weight: bold; color: var(--primary-color) !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="doctor_dashboard.html">
+                <i class="fas fa-heartbeat text-danger"></i> VitaConnect <small class="text-muted" style="font-size: 0.6em; vertical-align: middle;">(Doctor Portal)</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="doctor_dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My Patients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 text-center p-4 border-top border-4 border-success shadow-sm">
+                    <div class="mb-3">
+                        <span class="fa-stack fa-3x">
+                          <i class="fas fa-circle fa-stack-2x text-light"></i>
+                          <i class="fas fa-user-md fa-stack-1x text-primary"></i>
+                        </span>
+                    </div>
+                    <h4 class="card-title">Dr. John Doe</h4>
+                    <p class="text-muted">Cardiologist</p>
+                    
+                    <div class="badge bg-success p-2 mb-3">
+                        <i class="fas fa-check-shield"></i> Verified License
+                    </div>
+                    
+                    <ul class="list-group list-group-flush text-start">
+                        <li class="list-group-item"><i class="fas fa-briefcase text-muted me-2"></i> 12 Years Experience</li>
+                        <li class="list-group-item"><i class="fas fa-hospital text-muted me-2"></i> City General Hospital</li>
+                        <li class="list-group-item"><i class="fas fa-envelope text-muted me-2"></i> dr.doe@vita.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <div class="card bg-primary text-white h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h1 class="display-4 fw-bold">12</h1>
+                                <p>Appointments Today</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card bg-success text-white h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h1 class="display-4 fw-bold">45</h1>
+                                <p>Total Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-white fw-bold py-3">
+                        <i class="far fa-calendar-alt text-primary"></i> Today's Schedule
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <span class="badge bg-light text-dark me-2">10:00 AM</span>
+                                <strong>Rahul Sharma</strong> <span class="text-muted small">- Routine Checkup</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary">View Records</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <span class="badge bg-light text-dark me-2">11:30 AM</span>
+                                <strong>Sneha Gupta</strong> <span class="text-muted small">- Follow Up</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary">View Records</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <span class="badge bg-light text-dark me-2">02:00 PM</span>
+                                <strong>Vikram Singh</strong> <span class="text-muted small">- Consultation</span>
+                            </div>
+                            <button class="btn btn-sm btn-outline-primary">View Records</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
